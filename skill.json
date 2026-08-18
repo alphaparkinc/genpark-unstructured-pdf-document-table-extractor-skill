@@ -1,0 +1,35 @@
+{
+  "name": "genpark-unstructured-pdf-document-table-extractor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Fast unstructured PDF & multi-column document table extractor to Markdown and JSON schemas.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "pdf-extractor",
+    "table-parser",
+    "rag-pipeline",
+    "document-ai",
+    "markdown-tables"
+  ],
+  "inputs": {
+    "document_raw_text": {
+      "type": "string"
+    },
+    "output_format": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "extracted_tables_markdown": {
+      "type": "array"
+    },
+    "structured_records_json": {
+      "type": "array"
+    },
+    "extraction_accuracy_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
